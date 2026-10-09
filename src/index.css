@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #172b2a;
+  background: #f4f7f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --ink: #172b2a;
+  --muted: #778582;
+  --line: #e3e9e6;
+  --surface: #fff;
+  --canvas: #f4f7f5;
+  --green: #257968;
+  --green-deep: #174c43;
+  --green-soft: #eaf4ef;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* { box-sizing: border-box; }
+html { min-width: 320px; background: var(--canvas); }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, textarea, select { font: inherit; }
+button { color: inherit; }
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, [tabindex]:focus-visible { outline: 3px solid #81b5a7; outline-offset: 3px; }
+::selection { background: #cde7dc; color: #173d35; }
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --ink: #e5eeea;
+  --muted: #a1b0aa;
+  --line: #354440;
+  --surface: #202c29;
+  --canvas: #17211f;
+  --green: #82c7b0;
+  --green-deep: #b3e0d0;
+  --green-soft: #2e4840;
+  background: var(--canvas);
 }
